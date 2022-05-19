@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-purple {
+    background-color: #6f42c1;
+}
+.bg-green {
+    background-color: #198754;
+}
+.bg-blue {
+    background-color: #2b65bb;
+}
+
+td {
+    text-align: center;
+}
+.collapse th, .collapsing th {
+    padding-left: 50px;
+}
+
+.btn[aria-expanded="true"] .fa-chevron-down {
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+}
+.btn[aria-expanded="false"] .fa-chevron-down {
+    transform: rotate(0);
+    transition: all 0.2s ease-in-out;
+}
+span {
+    top: -13px;
+}
+
+@media (max-width: 768px ) {
+    .collapse th, .collapsing th {
+        padding-left: 10px;
+    }
+}
